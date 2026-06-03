@@ -12,22 +12,6 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
-     
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '21'
-
-      - name: Compile Java
-        run: javac HelloWorld.java
-
-      - name: Run Java
-        run: java HelloWorld
-
-      - name: Show files
-        run: ls -l
-
-      - name: Print Hello
-        run: echo "Hello CI/CD 🚀"
+      
+      - name: Build Docker image
+        run: docker build -t java-app .
