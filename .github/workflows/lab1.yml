@@ -23,4 +23,3 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
-``
