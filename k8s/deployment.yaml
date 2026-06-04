@@ -17,4 +17,3 @@ spec:
           image: rajkumarkvc/my-app:latest
           ports:
             - containerPort: 8080
-``
